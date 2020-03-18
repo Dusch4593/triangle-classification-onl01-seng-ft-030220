@@ -11,6 +11,9 @@ class Triangle
     # Instance method that returns the triangle's type as a symbol
     # There are three types: 
     #          * equilateral (all sides are equal)
+    #          * isosceles (two of the three sides are equal)
+    #          * scalene (no sides are equal)
+
     
     
     
