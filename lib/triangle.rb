@@ -28,13 +28,13 @@ class Triangle
   def kind 
     
     if(a <= 0 || b <= 0 || c <= 0)
-      raise TriangleError 
-    else 
       if(self.triangle_inequality?)
         
       else 
         raise TriangleError
-      end
+      end 
+    else 
+      raise TriangleError
     end
     #binding.pry
   end 
