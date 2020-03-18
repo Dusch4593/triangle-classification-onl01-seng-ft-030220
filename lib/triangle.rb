@@ -37,7 +37,9 @@ class Triangle
           :scalene
         end
       else 
-        raise TriangleError
+        begin 
+          raise TriangleError
+        rescue => TriangleError
       end 
     else 
       raise TriangleError
@@ -47,6 +49,8 @@ class Triangle
   
   class TriangleError < StandardError 
     # triangle error code 
+    def message 
+      "Invalid Triangle. Either doesn't satisfy triangle_inequality or one of the sides is less than or equal to zero."
   end
   
   def triangle_inequality? 
