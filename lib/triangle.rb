@@ -29,7 +29,7 @@ class Triangle
       raise TriangleError 
     else 
       if(self.triangle_inequality?)
-        
+        binding.pry
       else 
         raise TriangleError
       end
