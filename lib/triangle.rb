@@ -46,5 +46,8 @@ class Triangle
   def triangle_inequality? 
     (a + b > c && a + c > b && b + c > a) ? true : false
   end
+  
+  def equalateral? 
+  end
 end
 
