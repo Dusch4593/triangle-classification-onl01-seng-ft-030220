@@ -48,9 +48,8 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error 
         puts error.message 
-      end
+
     end
-    #binding.pry
   end 
   
   class TriangleError < StandardError 
