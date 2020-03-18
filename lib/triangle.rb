@@ -7,15 +7,29 @@ class Triangle
     @c = c 
   end
   
-  def kind 
-    # Instance method that returns the triangle's type as a symbol
+
+    # Triangle.kind - Instance method that returns the triangle's type as a symbol
+    
     # There are three types: 
     #          * equilateral (all sides are equal)
     #          * isosceles (two of the three sides are equal)
     #          * scalene (no sides are equal)
+    #
+    # Something to keep in mind is triangle inequality: 
+      the sum of any two sides is always greater than the third 
+    
+    # If a given Triangle object doesn't satisfy the principle of inequality is not a valid triangle. Therefore, it should raise a custom error called TriangleError (derivative of Standard Error). 
+    
+    # Also, a triangle is not valid if any of the three sides are less than or equal to zero. Therefore, that should also raise a TriangleError. 
 
     
+  def kind 
     
+    if(a <= 0 || b <= 0 || c <= 0)
+      raise TriangleError 
+    else 
+      
+    end
     
   end 
   
