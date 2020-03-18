@@ -11,10 +11,9 @@ class Triangle
   end
   
   
-
-
   def kind 
     if(self.triangle_inequality?)
+      binding.pry
       if(self.equilateral?)
         :equilateral
       end
@@ -29,6 +28,7 @@ class Triangle
     else 
       if(length1 <= 0 || length2 <= 0 || length3 <= 0)
         raise TriangleError
+        binding.pry
       else
       end
     end
