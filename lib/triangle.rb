@@ -29,7 +29,12 @@ class Triangle
     
     if(a > 0 && b > 0 && c > 0)
       if(self.triangle_inequality?)
-        
+        if(self.equilateral?)
+          :equilateral 
+        elsif(self.isosceles?)
+          :isosceles 
+        else 
+          :scalene
       else 
         raise TriangleError
       end 
@@ -47,7 +52,13 @@ class Triangle
     (a + b > c && a + c > b && b + c > a) ? true : false
   end
   
-  def equalateral? 
+  def equilateral?
+    (a == b && a == c) ? true : false
   end
+  
+  def isosceles?
+    (a == b || a == c || b == c) ? true : false
+  end
+
 end
 
