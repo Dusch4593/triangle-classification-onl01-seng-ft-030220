@@ -8,8 +8,10 @@ class Triangle
   end
   
   def kind 
-    =begin 
-    Instance method that returns the triangle's type as a symbol.
+    # Instance method that returns the triangle's type as a symbol
+    # There are three types: 
+    #          * equilateral (all sides are equal)
+    
     
     
   end 
