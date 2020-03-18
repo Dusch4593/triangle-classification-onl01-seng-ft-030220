@@ -44,11 +44,7 @@ class Triangle
   end
   
   def triangle_inequality? 
-    if(a + b > c && a + c > b && b + c > a)
-      true 
-    else 
-       false 
-    end
+    (a + b > c && a + c > b && b + c > a) ? true : false
   end
 end
 
