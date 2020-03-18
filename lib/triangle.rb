@@ -16,7 +16,7 @@ class Triangle
     #          * scalene (no sides are equal)
     #
     # Something to keep in mind is triangle inequality: 
-      the sum of any two sides is always greater than the third 
+    # the sum of any two sides is always greater than the third 
     
     # If a given Triangle object doesn't satisfy the principle of inequality is not a valid triangle. Therefore, it should raise a custom error called TriangleError (derivative of Standard Error). 
     
