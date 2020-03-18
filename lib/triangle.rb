@@ -76,4 +76,7 @@ class Triangle
   
 end
 
-# binding.pry
+
+#<Triangle:0x00000000014382e8 @length1=4, @length2=3, @length3=4>
+triangle = Triangle.new(4, 3, 4)
+binding.pry
