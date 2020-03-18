@@ -15,14 +15,17 @@ class Triangle
     if(self.triangle_inequality?)
       if(self.equilateral?)
         @type = :equilateral
+        @type
       end
       
       if(self.isosceles?)
-        @type = :isosceles 
+        @type = :isosceles
+        @type
       end
       
       if(self.scalene?)
-        @type = :scalene 
+        @type = :scalene
+        @type
       end
     else 
       if(length1 <= 0 || length2 <= 0 || length3 <= 0)
