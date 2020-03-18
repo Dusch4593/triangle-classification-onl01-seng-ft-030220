@@ -13,7 +13,6 @@ class Triangle
   
   def kind 
     if(self.triangle_inequality?)
-      binding.pry
       if(self.equilateral?)
         @type = :equilateral
       end
