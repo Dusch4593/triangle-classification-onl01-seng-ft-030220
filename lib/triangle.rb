@@ -36,7 +36,7 @@ class Triangle
         raise TriangleError
       end
     end
-    binding.pry
+    #binding.pry
   end 
   
   class TriangleError < StandardError 
