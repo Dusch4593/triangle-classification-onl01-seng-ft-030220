@@ -9,8 +9,9 @@ class Triangle
   
   def kind 
     =begin 
+    Instance method that returns the triangle's type as a symbol.
     
-    =end
+    
   end 
   
   class TriangleError < StandardError 
