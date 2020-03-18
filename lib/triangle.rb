@@ -47,18 +47,24 @@ class Triangle
   def equilateral?
     if(self.length1 == self.length2 && self.length1 == self.length3)
       true 
+    else 
+      false
     end
   end
   
   def isosceles?
     if(self.length1 == self.length2 || self.length1 == self.length3 || self.length2 == self.length3)
       true
+    else 
+      false
     end
   end
     
   def scalene?
     if(self.length1 != self.length2 && self.length1 != self.length3 && self.length2 != self.length3)
-      true 
+      true
+    else 
+      false
     end
   end
   
