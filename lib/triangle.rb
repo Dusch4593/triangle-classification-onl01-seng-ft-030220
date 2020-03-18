@@ -49,6 +49,6 @@ class Triangle
        false 
     end
   end
+  binding.pry
 end
 
-binding.pry
