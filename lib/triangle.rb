@@ -28,12 +28,23 @@ class Triangle
     if(a <= 0 || b <= 0 || c <= 0)
       raise TriangleError 
     else 
-      
+      if(self.triangle_inequality?)
+        
+      else 
+        raise TriangleError
     end
     
   end 
   
   class TriangleError < StandardError 
     # triangle error code 
+  end
+  
+  def triangle_inequality? 
+    if(a + b > c || a + c > b || b + c > a)
+      true 
+    else 
+       false 
+    end
   end
 end
