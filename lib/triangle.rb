@@ -2,7 +2,7 @@ require 'pry'
 
 class Triangle
   # write code here
-  attr_accessor :length1, :length2, :length3
+  attr_accessor :length1, :length2, :length3, :type
   
   def initialize(length1, length2, length3)
     @length1 = length1
@@ -15,15 +15,15 @@ class Triangle
     if(self.triangle_inequality?)
       binding.pry
       if(self.equilateral?)
-        :equilateral
+        @type = :equilateral
       end
       
       if(self.isosceles?)
-        :isosceles 
+        @type = :isosceles 
       end
       
       if(self.scalene?)
-        :scalene 
+        @type = :scalene 
       end
     else 
       if(length1 <= 0 || length2 <= 0 || length3 <= 0)
