@@ -57,7 +57,7 @@ class Triangle
     # triangle error code 
     def message 
       "Invalid Triangle. Either doesn't satisfy triangle_inequality or one of the sides is less than or equal to zero."
-  end
+    end
   
   def triangle_inequality? 
     (a + b > c && a + c > b && b + c > a) ? true : false
@@ -70,6 +70,5 @@ class Triangle
   def isosceles?
     (a == b || a == c || b == c) ? true : false
   end
-
 end
 
